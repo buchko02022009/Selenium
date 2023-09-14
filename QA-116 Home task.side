@@ -1,0 +1,133 @@
+{
+  "id": "e0e9e572-4d42-4829-8c5a-f9dcc92ae611",
+  "version": "2.0",
+  "name": "QA-116 Home task",
+  "url": "https://comfy.ua/ua/lviv/",
+  "tests": [{
+    "id": "853f9239-2366-46ac-9ae1-b445ae1c5d39",
+    "name": "Сhoose a good",
+    "commands": [{
+      "id": "d0aa32a8-0634-4ad7-ba71-d902b0b6bd9c",
+      "comment": "",
+      "command": "open",
+      "target": "n-are-of-body-and-person/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "df988453-5cc1-41fa-9982-b7eab1a9e7ee",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"q-app\"]/div/div[3]/div/div/a/img",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4063aeb3-c870-4b50-95df-0e3d07516249",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.promo-categories",
+      "targets": [
+        ["css=.promo-categories", "css:finder"],
+        ["xpath=//div[@id='q-app']/div/main/div[2]", "xpath:idRelative"],
+        ["xpath=//main/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b203d51c-729e-4294-bac6-ad765355808b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=div:nth-child(4) .home-section__header",
+      "targets": [
+        ["css=div:nth-child(4) .home-section__header", "css:finder"],
+        ["xpath=//div[@id='q-app']/div/main/div[3]/section/div", "xpath:idRelative"],
+        ["xpath=//div[3]/section/div", "xpath:position"]
+      ],
+      "value": "Хіти продажу"
+    }, {
+      "id": "770d7a92-c74f-4221-9279-6bbaae1ce93e",
+      "comment": "",
+      "command": "store",
+      "target": "Пилососи",
+      "targets": [],
+      "value": "SearchText"
+    }, {
+      "id": "8d2a6f35-44c5-46d4-b2b3-a17f4ff3b260",
+      "comment": "",
+      "command": "type",
+      "target": "css=.home-section:nth-child(6) .home-section__title",
+      "targets": [
+        ["css=.home-section:nth-child(6) .home-section__title", "css:finder"],
+        ["xpath=//div[@id='q-app']/div/main/div[2]/section[6]/div/h3", "xpath:idRelative"],
+        ["xpath=//section[6]/div/h3", "xpath:position"],
+        ["xpath=//h3[contains(.,'Пилососи')]", "xpath:innerText"]
+      ],
+      "value": "${searchText}"
+    }]
+  }, {
+    "id": "1157112d-445e-469c-9118-57ef15842045",
+    "name": "Buying vacuum cleaner",
+    "commands": [{
+      "id": "c9360885-3b35-44c9-85ef-ac1e9e4643c7",
+      "comment": "",
+      "command": "open",
+      "target": "/vacuum-cleaner/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d213899e-2225-4276-bd6d-252d69373e68",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//*[@id=\"q-app\"]/div/div[5]/div[1]/div[2]/div/div/div[2]/div/div",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ff9dbe8-3423-4bfb-b5fd-2f569fa05e02",
+      "comment": "",
+      "command": "type",
+      "target": "css=.category-info__name",
+      "targets": [
+        ["css=.category-info__name", "css:finder"],
+        ["xpath=//div[@id='q-app']/div/div[5]/div/div[3]/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Пилососи в Львові')]", "xpath:innerText"]
+      ],
+      "value": "Пилососи в Львові"
+    }, {
+      "id": "fcb61fea-7de2-4912-bf1c-115f208d8a9f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#pr-2223783 .products-list-item__name",
+      "targets": [
+        ["linkText=Робот-пилосос миючий Rowenta RR8595WH", "linkText"],
+        ["css=#pr-2223783 .products-list-item__name", "css:finder"],
+        ["xpath=//a[contains(text(),'Робот-пилосос миючий Rowenta RR8595WH')]", "xpath:link"],
+        ["xpath=//div[@id='pr-2223783']/div[4]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://comfy.ua/ua/robot-pylesos-mojuschij-rowenta-rr8595wh.html')])[3]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/div/div[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Робот-пилосос миючий Rowenta RR8595WH')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6601b329-f2ce-4bf5-9144-6f458663dce5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.gen-tab__name",
+      "targets": [
+        ["css=.gen-tab__name", "css:finder"],
+        ["xpath=//div[@id='q-app']/div/main/div[3]/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Робот-пылесос моющий Rowenta RR8595WH')]", "xpath:innerText"]
+      ],
+      "value": "Робот-пылесос моющий Rowenta RR8595WH"
+    }]
+  }],
+  "suites": [{
+    "id": "ebf77252-5669-4619-b8f8-5f2d66786476",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["853f9239-2366-46ac-9ae1-b445ae1c5d39"]
+  }],
+  "urls": ["https://comfy.ua/ua/lviv/"],
+  "plugins": []
+}
